@@ -1,4 +1,4 @@
-/* Add CSS styling here */
+/*
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,7 +19,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -41,23 +41,33 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
+} */
+
+/* {
+	border: 1px solid black;
+}*/
 
 body {
-    background: #deccb6;
-}
-
-header {
-    display: flex;
+	background: #deccb6;
+	font-family: 'Quicksand', sans-serif;
 }
 
 nav {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 nav a {
-    display:
+	display: flex;
+	border: 2px groove black;
+	padding: 20px;
+	width: 80px;
+	height: 20px;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: black;
+	margin: 5px;
 }
