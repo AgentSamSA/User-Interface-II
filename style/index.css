@@ -43,3 +43,21 @@ table {
 	border-spacing: 0;
 }
 
+body {
+    background: #deccb6;
+}
+
+header {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+nav a {
+    display:
+}
