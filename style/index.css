@@ -111,6 +111,22 @@ div.intro a {
 	font-size: calc(7px + .5vw);
 }
 
+div.contact-container a {
+	display: flex;
+	border: 1px groove black;
+	padding: 15px;
+	width: 15vw;
+	height: 2vw;
+	max-width: 120px;
+	max-height: 20px;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: black;
+	margin: .5vw;
+	font-size: calc(7px + .5vw);
+}
+
 .img-container {
 	display: flex;
 	width:30%;
