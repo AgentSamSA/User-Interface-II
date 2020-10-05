@@ -1,0 +1,270 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	/*font: inherit;*/
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* gereral styling */
+* {
+	box-sizing: border-box;
+	max-width: 100%;
+	border: 1px solid grey;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	background: #deccb6;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.6rem;
+}
+header {
+	background: #635340;
+}
+header, footer {
+	width: 100%;
+}
+h1, h2, h3 {
+	font-family: 'Antic Slab', serif;
+}
+h1 {
+	margin: 1%;
+	font-size: 4rem;
+	text-align: center;
+}
+h2 {
+	font-size: 3rem;
+	margin: 2% 0;
+}
+a {
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	font-size: 2rem;
+}
+
+/*header styling*/
+
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+nav a {
+	display: flex;
+	width: 45%;
+	padding: 20px 0;
+	align-items: center;
+	justify-content: center;
+	margin: 5px;
+	border: 1px groove black;
+}
+.home-tab {
+	background: black;
+	color: #635340;
+}
+
+/*intro styling*/
+
+.intro-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 2% 0;
+	padding: 2% 0;
+}
+.img-container {
+	width: 70%;
+}
+.my-pic {
+	width: 100%;
+	border-radius: 100%;;
+}
+.intro {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	text-align: center;
+	width: 90%;
+	padding: 2%;
+}
+.projects-tab2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	padding: 20px 0;
+	margin: 5% 0;
+	border: 1px groove black;
+}
+div.intro p {
+	margin: 5% 0;
+}
+
+/*project styling*/
+
+.project-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+.project {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 45%;
+	align-items: center;
+	margin: 5% 0;
+	text-align: center;
+}
+.project-img {
+	width: 100%;
+}
+
+/*footer styling*/
+
+footer {
+	background: #cfa87a;
+}
+.contact-container {
+	display: flex;
+	align-items: center;
+	flex-flow: column nowrap;
+	text-align: center;
+}
+.contact-tab2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+	padding: 20px 0;
+	margin-bottom: 1%;
+	border: 1px groove black;
+}
+address {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	background: #cfa87a;
+}
+address a {
+	font-style: normal;
+	font-size: calc(4px + .5rem);
+}
+address span {
+	display: flex;
+	align-items: center;
+}
+address img {
+	width: 16px;
+}
+
+/*media styling*/
+
+@media(min-width: 800px) {
+	nav {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	nav a {
+		width: 20%;
+		margin: 2% 0;
+	}
+	.intro-container {
+		flex-direction: row;
+	}
+	.img-container {
+		margin: 2%;
+	}
+	.intro {
+		align-items: flex-start;
+	}
+	.project {
+		width: 23%;
+	}
+	.contact-tab2 {
+		width: 25%;
+	}
+	address a {
+		font-size: 1.6rem;
+	}
+}
+
+@media(min-width: 1200px) {
+	h1 {
+		display: flex;
+		justify-content: flex-start;
+	}
+	nav {
+		display: flex;
+		justify-content: flex-start;
+		width: 70%;
+	}
+	nav a {
+		width: 20%;
+		margin: 2% 2%;
+	}
+	.projects-tab2 {
+		width: 30%;
+	}
+	.contact-tab2 {
+		width: 15%;
+	}
+}
+
+@media(min-width: 1600px) {
+	nav {
+		width: 50%;
+	}
+	nav a {
+		width: 15%;
+		margin: 1% 2%;
+	}
+	.img-container {
+		width: 25%;
+	}
+	.intro {
+		width: 40%;
+	}
+	.contact-tab2 {
+		width: 10%;
+	}
+}
