@@ -13,7 +13,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	/*font: inherit;*/
 	vertical-align: baseline;
@@ -42,101 +41,77 @@ table {
 	border-spacing: 0;
 }
 
+/* gereral styling */
+* {
+	box-sizing: border-box;
+	max-width: 100%;
+	border: 1px solid grey;
+}
 html {
 	font-size: 62.5%;
 }
-
-
 body {
 	background: #deccb6;
 	font-family: 'Quicksand', sans-serif;
-	font-size: 1.6rem;
+	font-size: calc(7px + .5vw);
 }
-
 header {
 	background: #635340;
 }
-
+h1, h2, h3 {
+	font-family: 'Antic Slab', serif;
+}
 h1 {
-	padding-top: .5vw;
-	margin-left: 15px;
-	font-family: 'Antic Slab', serif;
-	font-size: 3rem;
+	margin: 1%;
+	font-size: 5rem;
+}
+h2 {
+	font-size: 4rem;
+	margin: 1% 0;
+}
+a {
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	border: 1px groove black;
 }
 
-h2 {
-	font-family: 'Antic Slab', serif;
-	margin: .5vw 0;
-	font-size: 2.5rem;
-}
+/*header styling*/
 
 nav {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
 	align-items: center;
-	padding-bottom: 1vw;
-	margin-top: 0;
+	width: 30%;
+	margin-left: 2%;
 }
-
 nav a {
 	display: flex;
-	border: 1px groove black;
-	padding: 15px;
-	width: 6vw;
-	height: 2vw;
-	max-width: 80px;
-	max-height: 20px;
+	width: 25%;
+	padding: 20px 0;
 	align-items: center;
 	justify-content: center;
-	text-decoration: none;
-	color: black;
 	margin: 5px;
-	font-size: calc(7px + .5vw);
 }
+
+/*intro styling*/
 
 div.intro a {
 	display: flex;
-	border: 1px groove black;
-	padding: 15px;
-	width: 15vw;
-	height: 2vw;
-	max-width: 120px;
-	max-height: 20px;
 	align-items: center;
 	justify-content: center;
-	text-decoration: none;
-	color: black;
-	margin: .5vw;
-	font-size: calc(7px + .5vw);
+	width: 25%;
+	padding: 20px 0;
+	margin: 5% 0;
 }
-
-div.contact-container a {
-	display: flex;
-	border: 1px groove black;
-	padding: 15px;
-	width: 15vw;
-	height: 2vw;
-	max-width: 120px;
-	max-height: 20px;
-	align-items: center;
-	justify-content: center;
-	text-decoration: none;
-	color: black;
-	margin: .5vw;
-	font-size: calc(7px + .5vw);
-}
-
 .img-container {
-	display: flex;
-	width:30%;
+	width: 30%;
 }
-
 .my-pic {
 	width: 100%;
 	border-radius: 100%;;
 }
-
 .intro-container {
 	display: flex;
 	flex-flow: row nowrap;
@@ -144,82 +119,67 @@ div.contact-container a {
 	align-items: flex-start;
 	margin: 2% 0;
 	padding: 2% 0;
-	font-size: calc(7px + .5vw);
 }
-
 .intro {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	width: 40%;
-	height: 65vw;
-	max-height: 400px;
+	height: 60vh;
 	padding: 2%;
 }
-
-div.intro > p {
-	padding: .5vw;
-	margin-top: 5px;
+div.intro p {
+	margin: 5% 0;
 }
+
+/*project styling*/
 
 .project-container {
-	height: 45vw;
-	max-height: 400px;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
-
 .project {
 	display: flex;
 	flex-flow: column nowrap;
 	width: 20%;
-	height: 20vw;
-	max-height: 200px;;
-	margin: .5vw;
 	align-items: center;
-	padding-bottom: 0;
-	font-size: calc(7px + .5vw);
+	margin: 1%;
 }
+.project-img {
+	width: 100%;
+}
+
+/*footer styling*/
 
 footer {
 	background: #cfa87a;
 }
-
 .contact-container {
 	display: flex;
-	height: 20vw;
-	max-height: 120px;
 	align-items: center;
 	flex-flow: column nowrap;
 }
-
-div.contact-container h2 {
-	height: calc(4vw + 10px);
-	max-height: 40px;
+div.contact-container a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 7%;
+	padding: 20px 0;
+	margin-bottom: 1%;
 }
-div img {
-	width: 100%;
-}
-
 address {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
-	padding: .5vw;
 }
-
 address a {
-	text-decoration: none;
 	font-style: normal;
-	color: black;
 }
-
 address span {
 	display: flex;
 	align-items: center;
 }
-
 address img {
 	width: 16px;
 }
