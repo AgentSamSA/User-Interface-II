@@ -198,6 +198,39 @@ address img {
 
 /*media styling*/
 
+@media(max-width: 1400px) {
+	nav {
+		width: 50%;
+	}
+	.projects-tab2 {
+		width: 30%;
+		margin-left:2%;
+	}
+	.contact-tab2 {
+		width: 15%;
+	}
+}
+
+@media(max-width: 800px) {
+	nav {
+		width: 80%;
+		align-items: center;
+	}
+	nav a {
+		width: 22%;
+		margin: 2% 0;
+	}
+	.img-container {
+		width: 50%;
+	}
+	.projects-tab2 {
+		width: 50%;
+	}
+	.contact-tab2 {
+		width: 20%;
+	}
+}
+
 @media(max-width: 500px) {
 	header {
 		display: flex;
@@ -228,7 +261,7 @@ address img {
 		width: 80%;
 		align-items: center;
 		text-align: center;
-		height: 80vh;
+		height: 110vh;
 	}
 	.projects-tab2 {
 		width: 50%;
@@ -248,37 +281,5 @@ address img {
 	}
 	address span {
 		font-size: calc(5px + .5rem);
-	}
-}
-
-@media(max-width: 800px) {
-	nav {
-		width: 70%;
-		align-items: center;
-	}
-	nav a {
-		width: 25%;
-	}
-	.img-container {
-		width: 50%;
-	}
-	.projects-tab2 {
-		width: 50%;
-	}
-	.contact-tab2 {
-		width: 20%;
-	}
-}
-
-@media(max-width: 1400px) {
-	nav {
-		width: 50%;
-	}
-	.projects-tab2 {
-		width: 30%;
-		margin-left:2%;
-	}
-	.contact-tab2 {
-		width: 15%;
 	}
 }
