@@ -124,7 +124,7 @@ nav a {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	margin: 2% 0;
 	padding: 2% 0;
 }
@@ -259,9 +259,6 @@ address img {
 	nav a {
 		width: 25%;
 	}
-	.intro-container {
-		align-items: center;
-	}
 	.img-container {
 		width: 50%;
 	}
@@ -270,5 +267,18 @@ address img {
 	}
 	.contact-tab2 {
 		width: 20%;
+	}
+}
+
+@media(max-width: 1400px) {
+	nav {
+		width: 50%;
+	}
+	.projects-tab2 {
+		width: 30%;
+		margin-left:2%;
+	}
+	.contact-tab2 {
+		width: 15%;
 	}
 }
